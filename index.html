@@ -25,6 +25,13 @@
         justify-content: center;
         background-color: var(--light-gray);
       }
+      .sr-only {
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+      }
       .card-deck {
         display: grid;
         border-radius: 10px;
@@ -115,6 +122,11 @@
     </style>
   </head>
   <body>
+    <!-- For a11y -->
+    <header class="sr-only">
+      <h1>3-column preview card</h1>
+    </header>
+
     <main>
       <div class="card-deck">
         <article class="card">
